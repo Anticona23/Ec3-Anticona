@@ -34,3 +34,16 @@ GET {{server}}/categorias/3/instrumentos
 
 ###
 GET {{server}}/instrumentos?sort=nombre,desc
+
+### Probando Web Service Render
+@server2 = https://ec3anticona.onrender.com
+
+### Prueba 1
+GET {{server2}}/categorias/3/instrumentos
+
+### Prueba 2
+GET {{server2}}/categorias
+
+### Prueba 2
+GET {{server2}}/instrumentos
+
