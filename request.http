@@ -15,7 +15,7 @@ GET {{server}}/categorias
 POST {{server}}/categorias
 Content-Type: application/json
 
-{"nombre": "Instrumentos de cuerda"}
+{"nombre": "Instrumentos de percusión"}
 
 ### INSTRUMENTOS ###
 
@@ -26,4 +26,11 @@ GET {{server}}/instrumentos
 POST {{server}}/instrumentos
 Content-Type: application/json
 
-{"nombre": "Guitarra", "categoria": {{server}}/categorias/1} }
+{"nombre": "Timbales", "categoria": "https://anticona23-fictional-space-orbit-9pg765r74grcxr9x-8080.preview.app.github.dev/categorias/3"}
+
+
+###
+GET {{server}}/categorias/3/instrumentos
+
+###
+GET {{server}}/instrumentos?sort=nombre,desc
