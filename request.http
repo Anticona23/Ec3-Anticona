@@ -1,0 +1,29 @@
+GET https://anticona23-fictional-space-orbit-9pg765r74grcxr9x-8080.preview.app.github.dev/
+
+###
+@server = https://anticona23-fictional-space-orbit-9pg765r74grcxr9x-8080.preview.app.github.dev
+
+###
+GET {{server}}
+
+### CATEGORIAS ###
+
+### Listando categoria
+GET {{server}}/categorias
+
+### Agregando categoria
+POST {{server}}/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos de cuerda"}
+
+### INSTRUMENTOS ###
+
+### Listando instrumento
+GET {{server}}/instrumentos
+
+### Agregando instrumento
+POST {{server}}/instrumentos
+Content-Type: application/json
+
+{"nombre": "Guitarra", "categoria": {{server}}/categorias/1} }
